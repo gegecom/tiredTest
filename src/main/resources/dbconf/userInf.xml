@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.dao.UserDao">
+	<resultMap type="com.test.model.UserInf" id="userVO">
+		<id property="id" column="ID" />
+		<result property="userName" column="userName" />
+		<result property="password" column="password" />
+	</resultMap>
+	
+	<select id="getUser" parameterType="com.test.model.UserInf" resultMap="userVO">
+		select * from table_userInf
+		<where>
+			<if test="userName != null">
+				and name = #{name}
+			</if>
+			<if test="password != null">
+				and password = #{password}
+			</if>
+		</where>
+	</select>
+	
+</mapper>
