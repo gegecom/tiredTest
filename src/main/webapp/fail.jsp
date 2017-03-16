@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div> 名字：${userName}8989</div>
-<div> 密码：${pwd}AAAA</div>
+<div> 名字：${userName}别人又改了</div>
+<div> 密码：${pwd}这也改了</div>
 </body>
 </html>
