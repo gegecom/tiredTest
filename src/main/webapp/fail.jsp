@@ -8,6 +8,6 @@
 </head>
 <body>
 <div> 名字：${userName}DDDDD</div>
-<div> 密码：${pwd}</div>
+<div> 密码：${pwd}AAAA</div>
 </body>
 </html>
