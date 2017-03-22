@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import com.test.model.UserInf;
 
-@Repository
 public interface UserDao {
 	
 	public int addUser(UserInf model);

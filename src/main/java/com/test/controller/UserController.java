@@ -17,8 +17,8 @@ public class UserController {
 	UserService userService;
 	
 	@RequestMapping("/login")
-	public String login(@RequestParam(value="uname")String userName,
-						@RequestParam(value="upass")String password,
+	public String login(@RequestParam(value="uname",defaultValue="")String userName,
+						@RequestParam(value="upass",defaultValue="")String password,
 						Model model){
 		String path = "";
 		
@@ -32,7 +32,7 @@ public class UserController {
 			path = "success";
 		}else{
 			model.addAttribute("loginStatus", "fail");
-			path = "index";
+			path = "login";
 		}
 		
 		return path;

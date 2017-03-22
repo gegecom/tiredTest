@@ -18,11 +18,11 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public boolean isLogin(UserInf model) {
 		
-		List<UserInf> result = userDao.getUser(model);
-		
-		if(result!=null && result.size()>0){
-			return true;
-		}
+//		List<UserInf> result = userDao.getUser(model);
+//		
+//		if(result!=null && result.size()>0){
+//			return true;
+//		}
 		
 		return false;
 	}
