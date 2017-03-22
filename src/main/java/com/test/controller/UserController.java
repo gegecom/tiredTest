@@ -22,7 +22,6 @@ public class UserController {
 						Model model){
 		String path = "";
 		
-		//判断用户权限
 		UserInf user = new UserInf();
 		user.setUserName(userName);
 		user.setPassword(password);

@@ -12,7 +12,7 @@
 		select * from table_userInf
 		<where>
 			<if test="userName != null">
-				and name = #{name}
+				and userName = #{userName}
 			</if>
 			<if test="password != null">
 				and password = #{password}
