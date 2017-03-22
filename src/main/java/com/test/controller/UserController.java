@@ -34,6 +34,7 @@ public class UserController {
 			path = "login";
 		}
 		
+		
 		return path;
 	}
 }
